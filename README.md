@@ -1,2 +1,1 @@
-# template-express
-FTUX template for express.js
+Aptible Starter Template for Express.js
