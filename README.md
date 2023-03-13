@@ -2,7 +2,7 @@
 
 This is a variation of the [Express](https://expressjs.com/) template on [Aptible](https://aptible.com).
 
-The app in this repo is deployed at [app-52737.on-aptible.com](app-52737.on-aptible.com).
+The app in this repo is deployed at [https://app-52737.on-aptible.com/](https://app-52737.on-aptible.com/).
 
 ## Deployment
 
