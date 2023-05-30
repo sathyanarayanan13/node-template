@@ -1,10 +1,11 @@
-FROM node
+FROM node:lts
 
 WORKDIR /app
 
 COPY package.json /app
+COPY package-lock.json /app
 
-RUN npm install 
+RUN npm ci
 
 COPY . /app
 
