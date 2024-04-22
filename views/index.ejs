@@ -71,10 +71,10 @@
             })
                 .then(response => response.json())
                 .then(data => {
-                    console.log(data);
                     const tbody = document.getElementById('tableBody');
                     tbody.innerHTML = '';
                     data.forEach(item => {
+                        console.log(item)
                         tbody.innerHTML += `
                             <tr>
                                 <td>${item.id}</td>
