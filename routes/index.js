@@ -49,8 +49,7 @@ router.get('/students', async (req, res) => {
 // index page
 router.get('/', async function (req, res, next) {
   const students = await db.any('SELECT * FROM schools')
-  console.log(students);
-  res.render("index", { title: "Docker sample", students: [] })
+  res.render("index", { title: "Docker sample", students: students })
 });
 
 
