@@ -73,6 +73,7 @@
                 .then(data => {
                     const tbody = document.getElementById('tableBody');
                     tbody.innerHTML = '';
+                    console.log(data)
                     data.forEach(item => {
                         console.log(item)
                         tbody.innerHTML += `
