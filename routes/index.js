@@ -36,6 +36,16 @@ router.get('/setup', async (req, res) => {
     }
 })
 
+router.get('/students', async (req, res) => {
+    try {
+      const students = await db.any('SELECT * FROM schools')
+      res.status(200).send({ students: students })
+    } catch (err) {
+        console.log(err)
+        res.sendStatus(500)
+    }
+})
+
 // index page
 router.get('/', async function (req, res, next) {
   const students = await db.any('SELECT * FROM schools')
